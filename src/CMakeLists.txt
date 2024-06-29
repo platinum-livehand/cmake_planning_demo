@@ -7,18 +7,16 @@ add_subdirectory(show_result)
 # 生成可执行程序
 add_executable(${PROJECT_NAME} planning_main.cpp)
 
+# 添加包含
 target_include_directories(${PROJECT_NAME}
 PUBLIC
-# 添加 process 库的包含
 ${PROCESS_DIR}
-# 添加 show_result 库的包含
 ${SHOW_RESULT_DIR}
 )
 
+# 链接库
 target_link_libraries(${PROJECT_NAME}
 PUBLIC
-# 链接 process 库
 process
-# 链接 show_result 库
 show_result
 )

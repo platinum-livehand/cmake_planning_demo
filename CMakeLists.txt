@@ -19,9 +19,12 @@ set(EIGEN3_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/third_party/eigen-3.4.0)
 
 list(APPEND CMAKE_MODULE_PATH "${EIGEN3_INCLUDE_DIR}/cmake")
 
-message("CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}")
+message(STATUS "CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}")
 
 find_package(Eigen3 3.4 REQUIRED)
+if(TARGET Eigen3::Eigen)
+    message(STATUS "******** Eigen3 3.4 found in ${EIGEN3_INCLUDE_DIR} ********")
+endif()
 
 # Ìí¼Ó×ÓÄ¿Â¼
 add_subdirectory(src)

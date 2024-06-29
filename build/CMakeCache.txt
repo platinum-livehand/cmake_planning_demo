@@ -266,6 +266,15 @@ Eigen3_DIR:PATH=Eigen3_DIR-NOTFOUND
 FindEigen3_DIR:PATH=FindEigen3_DIR-NOTFOUND
 
 //Value Computed by CMake
+map_test_BINARY_DIR:STATIC=D:/C++Project/cmake_planning_demo/build/test/map_test
+
+//Value Computed by CMake
+map_test_IS_TOP_LEVEL:STATIC=OFF
+
+//Value Computed by CMake
+map_test_SOURCE_DIR:STATIC=D:/C++Project/cmake_planning_demo/test/map_test
+
+//Value Computed by CMake
 planning_BINARY_DIR:STATIC=D:/C++Project/cmake_planning_demo/build
 
 //Value Computed by CMake
@@ -417,7 +426,7 @@ CMAKE_MODULE_LINKER_FLAGS_RELWITHDEBINFO-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_NM
 CMAKE_NM-ADVANCED:INTERNAL=1
 //number of local generators
-CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=5
+CMAKE_NUMBER_OF_MAKEFILES:INTERNAL=6
 //ADVANCED property for variable: CMAKE_OBJCOPY
 CMAKE_OBJCOPY-ADVANCED:INTERNAL=1
 //ADVANCED property for variable: CMAKE_OBJDUMP

@@ -28,3 +28,7 @@ endif()
 
 # 添加子目录
 add_subdirectory(src)
+
+# 启动测试
+enable_testing()
+add_subdirectory(test/map_test)

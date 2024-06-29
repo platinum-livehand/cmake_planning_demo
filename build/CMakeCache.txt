@@ -256,6 +256,15 @@ CMAKE_TAPI:FILEPATH=CMAKE_TAPI-NOTFOUND
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//Path to a file.
+EIGEN3_INCLUDE_DIR:PATH=EIGEN3_INCLUDE_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for Eigen3.
+Eigen3_DIR:PATH=Eigen3_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for FindEigen3.
+FindEigen3_DIR:PATH=FindEigen3_DIR-NOTFOUND
+
 //Value Computed by CMake
 planning_BINARY_DIR:STATIC=D:/C++Project/cmake_planning_demo/build
 

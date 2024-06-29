@@ -16,13 +16,14 @@ PUBLIC
 process
 )
 
-# 添加 EasyX 库
+# 添加 EasyX 库的包含
 target_include_directories(${PROJECT_NAME}
 PUBLIC
-${EasyX_DIR}/include
+${EASYX_DIR}/include
 )
 
+# 链接 EasyX 库
 target_link_libraries(${PROJECT_NAME}
 PUBLIC
-${EasyX_DIR}/lib64/libeasyx.a
+${EASYX_DIR}/lib64/libeasyx.a
 )

@@ -14,7 +14,14 @@ set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 set(PROCESS_DIR ${CMAKE_SOURCE_DIR}/src/process)
 set(PNC_MAP_DIR ${CMAKE_SOURCE_DIR}/src/pnc_map)
 set(SHOW_RESULT_DIR ${CMAKE_SOURCE_DIR}/src/show_result)
-set(EasyX_DIR ${CMAKE_SOURCE_DIR}/third_party/EasyX)
+set(EASYX_DIR ${CMAKE_SOURCE_DIR}/third_party/EasyX)
+set(EIGEN3_INCLUDE_DIR ${CMAKE_SOURCE_DIR}/third_party/eigen-3.4.0)
+
+list(APPEND CMAKE_MODULE_PATH "${EIGEN3_INCLUDE_DIR}/cmake")
+
+message("CMAKE_MODULE_PATH = ${CMAKE_MODULE_PATH}")
+
+find_package(Eigen3 3.4 REQUIRED)
 
 # Ìí¼Ó×ÓÄ¿Â¼
 add_subdirectory(src)

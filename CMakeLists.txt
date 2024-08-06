@@ -7,6 +7,8 @@ project(planning
     LANGUAGES CXX
 )
 
+set(CMAKE_EXPORT_COMPILE_COMMANDS TRUE)
+
 # 检测操作系统
 if(CMAKE_SYSTEM_NAME STREQUAL "Linux")
     message(STATUS "Configuring on/for Linux")
@@ -27,9 +29,9 @@ set(CMAKE_CXX_STANDARD_REQUIRED ON)
 message(STATUS "CXX_STANDARD = ${CMAKE_CXX_STANDARD}")
 
 # 静态库输出目录
-set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/lib)
+set(CMAKE_ARCHIVE_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 # 动态库输出目录
-set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_CURRENT_LIST_DIR}/bin)
+set(CMAKE_LIBRARY_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 # 可执行程序输出目录
 set(CMAKE_RUNTIME_OUTPUT_DIRECTORY ${CMAKE_SOURCE_DIR}/bin)
 
@@ -46,6 +48,6 @@ find_package(Eigen3 CONFIG REQUIRED)
 # 添加子目录
 add_subdirectory(src)
 
-# # 启动测试
-# enable_testing()
-# add_subdirectory(test/map_test)
+# 启动测试
+enable_testing()
+add_subdirectory(test/map_test)
